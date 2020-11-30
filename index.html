@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+                    margin : 100px auto;
+                    border-color:1px solid black;
+                    -webkit-box-shadow: 3px 4px 9px 0px rgba(0,0,0,0.79);
+                  box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.79);
+                    width:400px;
+                    height:300px;
+                 border-radius: 10%; 
+                    text-align: center;
+                 background-color:white;
+        }
+        input{
+            background-image: url("user.png");
+            background-size: 13px;
+            width: 125px;
+            height: 24px;
+            padding-left: 27px;
+            background-repeat:no-repeat;
+            margin: -27px auto;
+            background-position: left -58px;
+            background-color: transparent;
+            background-position: top 0px;
+            background-position-y: center;
+            background-position-x: 4px;
+            font-weight:bolder;
+            -moz-box-shadow: 1px 11px 86px 8px rgba(219,216,219,1);
+            border-top:none;
+            border: 2px solid #dadada;
+            border-radius: 7px;
+        }
+        input::placeholder{
+                    color:black;
+                    font-weight:bold
+        }
+        .input__password{
+            background-image: url("password.png");
+          
+            width: 125px;
+            height: 24px;
+            padding-left: 27px;
+            background-repeat:no-repeat;
+            margin:20px auto;
+            background-position: left -58px;
+            background-position: top 0px;
+            background-position-y: center;
+            background-position-x: 4px;
+            color:black;
+            font-weight:bolder;
+            -moz-box-shadow: 1px 11px 86px 8px rgba(219,216,219,1);
+
+            border-radius: 7px;
+            background-color: transparent;
+        }
+        .input__password::placeholder{
+                    font-weight:bold
+               
+        }
+
+        .form__fields{
+                    padding: 81px;
+        }
+        label{
+                font-family: monospace;
+                font-size: 18px;
+        }
+        input:focus{
+                    outline:none;
+        }
+        .btn {
+  width: 100px;
+  height: 32px;
+  /* padding: 0px; */
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 6px;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+ 
+}
+
+.btn:hover {
+  background-color: rgba(8, 8, 8,0.7);
+  color:white;
+  border:1px solid white;
+}
+legend{
+  margin-bottom: 3px;
+}
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <form>
+        
+           
+            <div class="form__fields">
+        
+        <label>User:</label>  <input placeholder="Username" type="text"> <br />
+        <label>Pass:</label> <input class="input__password" placeholder="Password" type="text">
+        <button class="btn">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg>
+            <span>Hello How are you</span>
+          </button>
+
+    </div>
+        </form>
+    </div>
+    
+</body>
+</html>
